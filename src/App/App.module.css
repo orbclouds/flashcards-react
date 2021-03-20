@@ -1,0 +1,11 @@
+.Container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.Cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}

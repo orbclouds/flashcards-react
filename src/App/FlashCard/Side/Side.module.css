@@ -1,0 +1,60 @@
+.Card--front,
+.Card--back {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.Card--front {
+  transform: rotateY(0deg);
+}
+
+.Card--back {
+  transform: rotateY(180deg);
+}
+
+.Tip {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 16px;
+  display: flex;
+  font-size: 0.8em;
+  font-weight: bold;
+  position: absolute;
+  align-items: center;
+  letter-spacing: 0.05em;
+  justify-content: center;
+}
+
+.Content {
+  height: 100%;
+}
+
+.Close {
+  top: 0;
+  right: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  opacity: 0.72;
+  color: white;
+  display: flex;
+  font-weight: bold;
+  background: black;
+  font-weight: 1.4em;
+  position: absolute;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transform: translate(50%, -50%);
+}
+
+.Close:hover {
+  opacity: 0.8;
+}
