@@ -1,0 +1,45 @@
+.Container {
+  top: 0;
+  height: 64px;
+  display: flex;
+  z-index: 9999;
+  font-size: 0.9em;
+  position: sticky;
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  box-shadow: 0 2px 2px
+    rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s
+    cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.Container.Show {
+  transform: translateY(0%);
+}
+
+.Container .Link {
+  margin: 0 8px;
+  display: block;
+  padding: 4px 8px;
+  border-radius: 2px;
+  border: solid 1px #ccc;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.1s
+    cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.Container .Link:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.Container .Link,
+.Container .Link:link,
+.Container .Link:focus,
+.Container .Link:active,
+.Container .Link:visited {
+  color: inherit;
+  text-decoration: none;
+}
